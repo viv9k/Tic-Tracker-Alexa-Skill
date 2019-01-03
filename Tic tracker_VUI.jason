@@ -1,0 +1,221 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "tic tracker",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddNewItemIntent",
+                    "slots": [],
+                    "samples": [
+                        "add new",
+                        "lets add new",
+                        "i want to add new item",
+                        "okay let me add new item"
+                    ]
+                },
+                {
+                    "name": "AddItemIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "item"
+                        }
+                    ],
+                    "samples": [
+                        "{item}",
+                        "add new {item}",
+                        "add {item}"
+                    ]
+                },
+                {
+                    "name": "PriceIntent",
+                    "slots": [
+                        {
+                            "name": "price",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "make it {price}",
+                        "rate for the item is {price}",
+                        "its price is {price}",
+                        "{price}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddInTodayList",
+                    "slots": [
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "item",
+                            "type": "item"
+                        }
+                    ],
+                    "samples": [
+                        "add {item} {quantity}",
+                        "add {quantity} {item}",
+                        "add {quantity} piece of {item}",
+                        "add {quantity} kilograms of {item}",
+                        "add {item} of {quantity} kg",
+                        "add {quantity} kg of {item}",
+                        "add {quantity} litres of {item}",
+                        "add {item} of {quantity} litres",
+                        "add {quantity} litre of {item}"
+                    ]
+                },
+                {
+                    "name": "BillIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "item"
+                        }
+                    ],
+                    "samples": [
+                        "show me {item} bill",
+                        "show me bill for {item}",
+                        "tell me {item} amount ",
+                        "tell me {item} amount to pay",
+                        "{item} bill",
+                        "give me bill for {item}",
+                        "tell me final amount for {item}",
+                        "tell me final amount",
+                        "show me the bill",
+                        "what to pay",
+                        "final amount",
+                        "bill up",
+                        "give me bill",
+                        "tell me the bill amount"
+                    ]
+                },
+                {
+                    "name": "SkillMenuIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me menu",
+                        "tell me skill menu",
+                        "menu",
+                        "show me skill menu",
+                        "Show me menu"
+                    ]
+                },
+                {
+                    "name": "ChangeThePrice",
+                    "slots": [],
+                    "samples": [
+                        "update new price",
+                        "change price",
+                        "change the price of the item"
+                    ]
+                },
+                {
+                    "name": "UpdatePriceIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "item"
+                        },
+                        {
+                            "name": "price",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "new {item} price is {price}",
+                        "update {price} rate to {item}",
+                        "update {item} price to {price}",
+                        "update {price} as new price for {item}",
+                        "change {item} price to {price}"
+                    ]
+                },
+                {
+                    "name": "LastMonthBill",
+                    "slots": [],
+                    "samples": [
+                        "last bill",
+                        "give me old bill",
+                        "tell me old bill",
+                        "show me old bill",
+                        "tell me previous month bill",
+                        "tell me last month bill",
+                        "give me previous month bill",
+                        "give me last month bill",
+                        "show me previous month bill",
+                        "show me last month bill"
+                    ]
+                },
+                {
+                    "name": "ClearDataIntent",
+                    "slots": [],
+                    "samples": [
+                        "delete my data",
+                        "clear my record",
+                        "reset my record",
+                        "start new",
+                        "reset",
+                        "reset my data",
+                        "clear my previous data"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "item",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "flowers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "newspaper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "water"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "milk"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
